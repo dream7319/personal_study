@@ -15,6 +15,7 @@
         <module>lierl_webflux</module>
         <module>lierl_jta_tcc</module>
         <module>lierl_log</module>
+        <module>lierl_kotlin_study</module>
     </modules>
     <dependencyManagement>
         <dependencies>
