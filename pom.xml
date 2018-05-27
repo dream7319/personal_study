@@ -36,7 +36,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.tuling.springboot.base.SpringBootStart</mainClass>
+                    <mainClass></mainClass>
                 </configuration>
                 <executions>
                     <execution>
