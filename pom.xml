@@ -16,6 +16,8 @@
         <module>lierl_jta_tcc</module>
         <module>lierl_log</module>
         <module>lierl_kotlin_study</module>
+        <module>lierl_springcloud_user</module>
+        <module>lierl_springcloud_eureka</module>
     </modules>
     <dependencyManagement>
         <dependencies>
