@@ -4,14 +4,14 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: server1
   client:
     #取消向eureka server(注册中心)注册
-    register-with-eureka: false
+    #register-with-eureka: false
     #取消向eureka server(注册中心)获取注册信息
-    fetch-registry: false
+   # fetch-registry: false
     service-url:
-      defaultZone: http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka
+      defaultZone: http://lierl:lierl@server2:8762/eureka,http://lierl:lierl@server3:8763/eureka
 security:
   user:
     name: lierl
