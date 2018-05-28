@@ -1,0 +1,18 @@
+server:
+  port: 8002
+spring:
+  application:
+    #应用名不能使用下划线
+    name: lierl-springcloud-user
+  datasource:
+    url: jdbc:mysql://139.199.129.251:3306/test?useSSL=false
+    password: root
+    username: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    service-url:
+      defaultZone: http://lierl:lierl@localhost:8761/eureka
