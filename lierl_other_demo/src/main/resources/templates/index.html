@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>demo</title>
+        <script type="text/javascript" th:src="@{/js/hello.js}"></script>
+        <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/hello.css}"/>
+    </head>
+    <body>
+        <p th:text="${title}"></p>
+        <p th:text="${msg}"></p>
+    </body>
+</html>

@@ -1,8 +1,7 @@
 package com.lierl.webflux.entity;
 
-import lombok.*;
-
-import java.util.Date;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
 /**
  * @Author: lierl
@@ -16,9 +15,9 @@ public class User {
     String name;
     String email;
 
-    @Setter(AccessLevel.NONE)//age属性忽略setter方法
-    Integer age;
+//    @Setter(AccessLevel.NONE)//age属性忽略setter方法
+//    Integer age;
 
-    @Getter(AccessLevel.NONE)//birthday 属性忽略getter方法
-    Date birthday;
+//    @Getter(AccessLevel.NONE)//birthday 属性忽略getter方法
+//    Date birthday;
 }
