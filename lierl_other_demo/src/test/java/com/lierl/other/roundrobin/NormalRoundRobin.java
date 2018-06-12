@@ -47,15 +47,16 @@ public class NormalRoundRobin {
 		servers.add(new Server("192.168.1.6"));
 		servers.add(new Server("192.168.1.7"));
 		servers.add(new Server("192.168.1.8"));
-
+//		StringBuffer buf = new StringBuffer("abcac");
+//		System.out.println(buf.reverse().toString());
 		ExecutorService executorService = Executors.newFixedThreadPool(1);
-		while(true){
-			executorService.execute(()->{
-				int c = count.get()%servers.size();
-				count.compareAndSet(count.get(), count.addAndGet(1));
-				System.out.println(count.get() +"-->" + servers.get(c));
-			});
-		}
+//		while(true){
+//			executorService.execute(()->{
+//				int c = count.get()%servers.size();
+//				count.compareAndSet(count.get(), count.addAndGet(1));
+//				System.out.println(count.get() +"-->" + servers.get(c));
+//			});
+//		}
 
 
 //		final CyclicBarrier b = new CyclicBarrier(14);

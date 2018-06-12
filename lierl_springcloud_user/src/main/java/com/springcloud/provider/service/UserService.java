@@ -8,4 +8,8 @@ import com.springcloud.provider.entity.User;
  **/
 public interface UserService {
 	User findById(Integer id);
+
+	default String aa(){
+		return "bb";
+	}
 }
