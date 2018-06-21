@@ -18,6 +18,7 @@
         <module>lierl_kotlin_study</module>
         <module>lierl_springcloud_user</module>
         <module>lierl_springcloud_eureka</module>
+        <module>lierl_springmvc</module>
     </modules>
     <dependencyManagement>
         <dependencies>

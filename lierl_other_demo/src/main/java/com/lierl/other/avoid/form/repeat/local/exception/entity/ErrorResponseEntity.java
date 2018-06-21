@@ -9,7 +9,7 @@ import lombok.Data;
  **/
 @Data
 @AllArgsConstructor
-public class ErrorResponseEntity {
+public class ErrorResponseEntity<T> {
 	private int code;
-	private String message;
+	private T message;
 }
