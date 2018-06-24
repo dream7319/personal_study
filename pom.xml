@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lierl.tl</groupId>
+    <groupId>lierl.tl</groupId>
     <artifactId>lierl</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
@@ -15,10 +15,8 @@
         <module>lierl_webflux</module>
         <module>lierl_jta_tcc</module>
         <module>lierl_log</module>
-        <module>lierl_kotlin_study</module>
         <module>lierl_springcloud_user</module>
         <module>lierl_springcloud_eureka</module>
-        <module>lierl_springmvc</module>
     </modules>
     <dependencyManagement>
         <dependencies>

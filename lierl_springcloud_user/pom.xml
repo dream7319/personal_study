@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lierl.provider</groupId>
+    <groupId>lierl.provider</groupId>
     <artifactId>lierl_springcloud_user</artifactId>
     <version>1.0-SNAPSHOT</version>
 

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lierl.springcloud.eureka</groupId>
+    <groupId>lierl.springcloud.eureka</groupId>
     <artifactId>lierl_springcloud_eureka</artifactId>
     <version>1.0-SNAPSHOT</version>
 
