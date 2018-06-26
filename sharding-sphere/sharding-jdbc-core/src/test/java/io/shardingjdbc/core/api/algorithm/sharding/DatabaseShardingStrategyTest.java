@@ -31,6 +31,6 @@ public final class DatabaseShardingStrategyTest {
     
     @Test
     public void assertDatabaseShardingStrategyWithSingleShardingColumn() {
-        assertThat(new StandardShardingStrategy("shardingColumn", null).getShardingColumns(), is((Collection<String>) Sets.newTreeSet(Collections.singleton("shardingColumn"))));
+		assertThat(new StandardShardingStrategy("shardingColumn", null).getShardingColumns(), is((Collection<String>) Sets.newTreeSet(Collections.singleton("shardingColumn"))));
     }
 }

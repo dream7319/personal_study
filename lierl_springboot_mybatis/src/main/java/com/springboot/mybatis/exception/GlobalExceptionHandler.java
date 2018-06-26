@@ -1,12 +1,11 @@
-package lierl.other.avoid.form.repeat.local.exception.global;
+package com.springboot.mybatis.exception;
 
-import lierl.other.avoid.form.repeat.local.exception.custom.CustomException;
-import lierl.other.avoid.form.repeat.local.exception.entity.ErrorResponseEntity;
+import com.springboot.mybatis.base.ResultBean;
+import com.sun.istack.internal.Nullable;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.lang.Nullable;
 import org.springframework.validation.BindException;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -22,27 +21,26 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * 全局异常处理
  * @author lierlei@xingyoucai.com
- * @create 2018-06-20 10:41
+ * @create 2018-06-26 10:59
  **/
 @RestControllerAdvice
 @Slf4j
-public class GlobalExceptionAdvice extends ResponseEntityExceptionHandler {
+public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 	/**
 	 * 定义要捕获的异常 可以多个 @ExceptionHandler({})
 	 *
 	 * @param e        exception
 	 * @param response response
 	 * @return 响应结果
-	 */
+
 	@ExceptionHandler(CustomException.class)
 	public ErrorResponseEntity customExceptionHandler(final Exception e, HttpServletResponse response) {
 		response.setStatus(HttpStatus.BAD_REQUEST.value());
 		CustomException exception = (CustomException) e;
 		return new ErrorResponseEntity<String>(exception.getCode(), exception.getMessage());
 	}
-
+	 */
 	/**
 	 * 捕获  RuntimeException 异常
 	 * TODO  如果你觉得在一个 exceptionHandler 通过  if (e instanceof xxxException) 太麻烦
@@ -53,16 +51,17 @@ public class GlobalExceptionAdvice extends ResponseEntityExceptionHandler {
 	 * @return 响应结果
 	 */
 	@ExceptionHandler(RuntimeException.class)
-	public ErrorResponseEntity runtimeExceptionHandler(final Exception e, HttpServletResponse response) {
+	public ResultBean<String> runtimeExceptionHandler(final Exception e, HttpServletResponse response) {
+		log.warn(e.getMessage());
 		int value = HttpStatus.BAD_REQUEST.value();
 		response.setStatus(value);
 		if(e instanceof ConstraintViolationException){
 			String message = ((ConstraintViolationException) e).getConstraintViolations().stream().map( cv -> cv == null ? "null" : cv.getMessage() )
 					.collect(Collectors.joining( ", " ));
-			return new ErrorResponseEntity<String>(value, message);
+			return new ResultBean<String>(value, message);
 		}else{
 			RuntimeException exception = (RuntimeException) e;
-			return new ErrorResponseEntity<String>(value, exception.getMessage());
+			return new ResultBean<String>(value, exception.getMessage());
 		}
 	}
 
@@ -71,25 +70,26 @@ public class GlobalExceptionAdvice extends ResponseEntityExceptionHandler {
 	 */
 	@Override
 	protected ResponseEntity<Object> handleExceptionInternal(Exception ex, @Nullable Object body, HttpHeaders headers, HttpStatus status, WebRequest request) {
+		log.warn(ex.getMessage());
 		if (ex instanceof MethodArgumentNotValidException) {
 			MethodArgumentNotValidException exception = (MethodArgumentNotValidException) ex;
-			return new ResponseEntity<>(new ErrorResponseEntity<String>(status.value(), exception.getBindingResult().getAllErrors().get(0).getDefaultMessage()), status);
+			return new ResponseEntity<>(new ResultBean<String>(status.value(), exception.getBindingResult().getAllErrors().get(0).getDefaultMessage()), status);
 		}
 		if (ex instanceof MethodArgumentTypeMismatchException) {
 			MethodArgumentTypeMismatchException exception = (MethodArgumentTypeMismatchException) ex;
 			log.error("参数转换失败，方法：" + exception.getParameter().getMethod().getName() + "，参数：" + exception.getName()
-						 + ",信息：" + exception.getLocalizedMessage());
-			return new ResponseEntity<>(new ErrorResponseEntity<String>(status.value(), "参数转换失败"), status);
+					  + ",信息：" + exception.getLocalizedMessage());
+			return new ResponseEntity<>(new ResultBean<String>(status.value(), "参数转换失败"), status);
 		}
 
 		if(ex instanceof BindException){
 			BindException bindException = (BindException) ex;
 			List<ObjectError> allErrors = bindException.getAllErrors();
-//			String message = allErrors.stream().map(error->error.getDefaultMessage()).collect(Collectors.joining( ", " ));
+			String message = allErrors.stream().map(error->error.getDefaultMessage()).collect(Collectors.joining( ", " ));
 //			return new ResponseEntity<>(new ErrorResponseEntity(status.value(), message), status);
-			return new ResponseEntity<>(new ErrorResponseEntity<Object>(status.value(), allErrors), status);
+			return new ResponseEntity<>(new ResultBean<Object>(status.value(), message), status);
 		}
 
-		return new ResponseEntity<>(new ErrorResponseEntity<String>(status.value(), "参数转换失败"), status);
+		return new ResponseEntity<>(new ResultBean<String>(status.value(), "参数转换失败"), status);
 	}
 }
