@@ -23,8 +23,4 @@ public class Spring4AllController {
 		return new ResultBean<>(spring4AllService.getAll());
 	}
 
-	@GetMapping("test")
-	public String test(){
-		return "hello world";
-	}
 }
