@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+
+	<!-- !!!! Driver Class Path !!!! -->
+	 <classPathEntry location="/Users/tommy/Library/Preferences/IntelliJIdea15/jdbc-drivers/mysql-connector-java-5.1.35-bin.jar"/>
+	<!--<classPathEntry
+		location="C:\Users\Administrator\.m2\repository\mysql\mysql-connector-java\5.1.30\mysql-connector-java-5.1.30.jar" />-->
+
+	<context id="context" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="false" />
+		</commentGenerator>
+
+		<!-- !!!! Database Configurations !!!! -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://123.56.21.219:3899/cbt_test"
+			userId="cbt_dev" password="vwuch4cp" />
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- !!!! Model Configurations !!!! -->
+		<javaModelGenerator targetPackage="com.cbt.server.dao.entity"
+			targetProject="cbt-service-web">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<!-- !!!! Mapper XML Configurations !!!! -->
+		<sqlMapGenerator targetPackage="com.cbt.server.dao"
+			targetProject="cbt-service-web">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+
+		<!-- !!!! Mapper Interface Configurations !!!! -->
+		<javaClientGenerator targetPackage="com.cbt.server.dao"
+			targetProject="cbt-service-web" type="XMLMAPPER">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		<!-- !!!! Table Configurations !!!! -->
+		<!--<table tableName="client_group" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />
+
+		<table tableName="client_project_binding" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />
+
+		<table tableName="client_session" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />-->
+
+		<!--<table tableName="client_update_log" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />-->
+
+		<!--<table tableName="client_version" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />
+
+		<table tableName="project" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />
+
+		<table tableName="project_member" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />
+
+		<table tableName="users" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />-->
+
+
+		<table tableName="project_config" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />
+		<!--<table tableName="project_app" enableCountByExample="false"
+			   enableDeleteByExample="false" enableSelectByExample="false"
+			   enableUpdateByExample="false" />-->
+	</context>
+</generatorConfiguration>

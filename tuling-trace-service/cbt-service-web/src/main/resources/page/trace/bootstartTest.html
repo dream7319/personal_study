@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bootStartTest</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">调用链</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <form class="navbar-form navbar-left" role="search">
+                <span>时间过滤:</span>
+                <select class="form-control" style="width: 100px;">
+                    <option value="43200">12小时内</option>
+                    <option value="3600" selected="selected" >1小时内</option>
+                    <option value="1800">30分钟内</option>
+                    <option value="60">1分钟内</option>
+                    <option value="30">30秒内</option>
+                    <option value="10">10秒内</option>
+                </select>
+                <span>&nbsp;&nbsp;IP过滤:</span>
+                <input type="text" class="form-control" placeholder="ip过滤,多个用号逗隔开" />
+                <span>&nbsp;&nbsp;关键字过滤:</span>
+                <input type="text" class="form-control" placeholder="关键字过滤"/>
+                <button type="submit" class="btn btn-success">&nbsp;&nbsp;刷新&nbsp;&nbsp;</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div style="margin-left: 10px;">
+
+
+   <!-- <dl class="text-overflow">
+        <dt><a href="#" style="font-size: 18px;"><span style="color:#00bbee">2016:11:22</span>  http://www.yunhou.com/1111222.html</a></dt>
+        <dd><span style="color: #4cae4c">192.168.10.11</span> name=aadf&vvv=sss</dd>
+        <dt><a href="#" style="font-size: 18px;"><span style="color:#00bbee">2016:11:22</span>  http://www.yunhou.com/1111222.html</a></dt>
+        <dd><span style="color: #4cae4c">192.168.10.11</span> name=aadf&vvv=sss</dd>
+        <dt><a href="#" style="font-size: 18px;"><span style="color:#00bbee">2016:11:22</span>  http://www.yunhou.com/1111222.html</a></dt>
+        <dd><span style="color: #4cae4c">192.168.10.11</span> name=aadf&vvv=sss</dd>
+        <dt><a href="#" style="font-size: 18px;"><span style="color:#00bbee">2016:11:22</span>  http://www.yunhou.com/1111222.html</a></dt>
+        <dd><span style="color: #4cae4c">192.168.10.11</span> name=aadf&vvv=sss</dd>
+
+    </dl>
+    <nav>
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li class="active"><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>-->
+
+
+    <!-- 主体内容 -->
+    <dl class="text-overflow">
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:12:02</span>
+            http://ssl.yunhou.com/bubugao-passport/mobiLogin  </a></dt>
+        <dd style="margin-bottom: 10px;">
+
+            <span style="color: #4cae4c">10.200.51.169 </span>
+            mobile=15019245309&captchaCode=&verifyCode=252027&returnUrl=http://www.yunhou.com/
+        </dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:03:05</span>
+            http://ssl.yunhou.com/bubugao-passport/smsSend  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+            type=PC_MOBILE_LOGIN&captchaCode=</dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:03:02</span>
+            http://ssl.yunhou.com/bubugao-passport/smsSend  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+            type=PC_MOBILE_LOGIN&captchaCode=</dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:03:02</span>
+            http://ssl.yunhou.com/bubugao-passport/checkMobile  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+            mobile=15019245309</dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:00:11</span>
+            http://search.yunhou.com/search/product/labelInfo  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+            goodsid_str=9295000581&callback=jQuery111109511885307729244_1470844818206&_=1470844818217</dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:00:11</span>
+            http://item.yunhou.com/product/hotrank  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+            cat_id=377&num=5&callback=jQuery111109511885307729244_1470844818206&_=1470844818216&shop_type=0</dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:00:11</span>
+            http://search.yunhou.com/search/product/productInfo  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+            callback=jQuery111109511885307729244_1470844818212&_=1470844818213&productid_str=9295000601</dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:00:11</span>
+            http://api.cart.yunhou.com/bubugao-trade-page/api/cart/getSimple  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+            callback=jQuery111109511885307729244_1470844818210&_=1470844818211</dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月224日 12:00:11</span>
+            http://list.yunhou.com/list/95740036.html  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+        </dd>
+        <dt><a href="#" style="font-size: 18px;">
+            <span style="color:#00bbee">08月223日 11:59:44</span>
+            http://item.yunhou.com/favicon.ico  </a></dt>
+        <dd style="margin-bottom: 10px;"><span style="color: #4cae4c">10.200.51.169 </span>
+        </dd>
+    </dl>
+
+    <!-- 分页组件 -->
+    <nav>
+        <ul class="pagination">
+            <!-- 上一页-->
+            <li>
+                <a href="#" aria-label="上一页">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">1</a>
+
+            </li>
+            <li>
+                <a class="active" href="#">2</a>
+
+            </li>
+            <li>
+                <a class="active" href="#">3</a>
+
+            </li>
+            <li>
+                <a class="active" href="#">4</a>
+
+            </li>
+            <!-- 下一页-->
+            <li>
+                <a href="#" aria-label="下一页">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</div>
+
+
+</body>
+</html>

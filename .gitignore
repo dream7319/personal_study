@@ -1,8 +1,0 @@
-/.idea/
-lierl_tl_study.iml
-**/target/
-**/*.iml
-**/.mvn
-**/mvnw
-**/*.cmd
-**/.gitignore
