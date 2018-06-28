@@ -1,6 +1,7 @@
 package com.springboot.mybatis.controller;
 
 import com.springboot.mybatis.base.ResultBean;
+import com.springboot.mybatis.condition.ConditionConfig;
 import com.springboot.mybatis.service.Spring4AllService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,8 +19,12 @@ public class Spring4AllController {
 	@Autowired
 	private Spring4AllService spring4AllService;
 
+	@Autowired
+	private ConditionConfig conditionConfig;
+
 	@GetMapping("/all")
 	public ResultBean<Object> getAll(){
+		System.out.println("-----"+conditionConfig);
 		return new ResultBean<>(spring4AllService.getAll());
 	}
 
