@@ -1,10 +1,7 @@
 package com.springboot.mybatis.condition;
 
 import com.springboot.mybatis.controller.Spring4AllController;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.boot.autoconfigure.condition.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
@@ -55,6 +52,12 @@ public class ConditionConfig {
 		return "bean";
 	}
 
+	@ConditionalOnClass(TestConditionOnClass.class)
+	@Bean
+	public String conditionOnClass(){
+		System.out.println("condition on class");
+		return "conditionOnClass";
+	}
 	/**
 	 * 不存在Spring4AllController类的实例时
 	 * @return

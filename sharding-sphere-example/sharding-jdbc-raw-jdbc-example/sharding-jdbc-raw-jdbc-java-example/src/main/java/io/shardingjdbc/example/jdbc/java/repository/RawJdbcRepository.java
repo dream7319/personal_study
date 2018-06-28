@@ -68,8 +68,9 @@ public class RawJdbcRepository {
     public void printEqualsSelect() throws SQLException {
         String sql = "SELECT i.* FROM t_order o JOIN t_order_item i ON o.order_id=i.order_id WHERE o.user_id=?";
         try (
-                Connection conn = dataSource.getConnection();
-                PreparedStatement preparedStatement = conn.prepareStatement(sql)) {
+            Connection conn = dataSource.getConnection();
+            PreparedStatement preparedStatement = conn.prepareStatement(sql)
+        ) {
             preparedStatement.setInt(1, 10);
             printSimpleSelect(preparedStatement);
         }

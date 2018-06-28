@@ -36,12 +36,13 @@ public final class RawJdbcJavaMasterSlaveOnlyMain {
     // CHECKSTYLE:ON
         new RawJdbcRepository(getMasterSlaveDataSource()).demo();
     }
-    
+
     private static DataSource getMasterSlaveDataSource() throws SQLException {
         MasterSlaveRuleConfiguration masterSlaveRuleConfig = new MasterSlaveRuleConfiguration();
         masterSlaveRuleConfig.setName("demo_ds_master_slave");
         masterSlaveRuleConfig.setMasterDataSourceName("demo_ds_master");
         masterSlaveRuleConfig.setSlaveDataSourceNames(Arrays.asList("demo_ds_slave_0", "demo_ds_slave_1"));
+        masterSlaveRuleConfig.setLoadBalanceAlgorithmClassName("io.shardingjdbc.core.api.algorithm.masterslave.RandomMasterSlaveLoadBalanceAlgorithm");
         return MasterSlaveDataSourceFactory.createDataSource(createDataSourceMap(), masterSlaveRuleConfig, new ConcurrentHashMap<String, Object>());
     }
     

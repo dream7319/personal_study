@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.microsoft.sqlserver:mssql-jdbc:6.1.7.jre7-preview">
+    <CLASSES>
+      <root url="jar://D:/maven/springRespo/com/microsoft/sqlserver/mssql-jdbc/6.1.7.jre7-preview/mssql-jdbc-6.1.7.jre7-preview.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/maven/springRespo/com/microsoft/sqlserver/mssql-jdbc/6.1.7.jre7-preview/mssql-jdbc-6.1.7.jre7-preview-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/maven/springRespo/com/microsoft/sqlserver/mssql-jdbc/6.1.7.jre7-preview/mssql-jdbc-6.1.7.jre7-preview-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

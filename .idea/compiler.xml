@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cbt-agent-base" />
+        <module name="cbt-agent-bootstrap" />
+        <module name="cbt-agent-collect-servlet" />
+        <module name="cbt-agent-collects" />
+        <module name="cbt-client-model" />
+        <module name="cbt-service-web" />
+        <module name="druid" />
+        <module name="druid-spring-boot-starter" />
+        <module name="lierl-dubbo-common" />
+        <module name="lierl-dubbo-consumer" />
+        <module name="lierl-dubbo-provider" />
+        <module name="lierl_jta_tcc" />
+        <module name="lierl_log" />
+        <module name="lierl_other_demo" />
+        <module name="lierl_outerside_tomcat" />
+        <module name="lierl_springboot_admin" />
+        <module name="lierl_springboot_mybatis" />
+        <module name="lierl_springcloud_eureka" />
+        <module name="lierl_springcloud_feign" />
+        <module name="lierl_springcloud_ribbon" />
+        <module name="lierl_springcloud_ribbon_without_eureka" />
+        <module name="lierl_springcloud_user" />
+        <module name="lierl_webflux" />
+        <module name="sharding-core" />
+        <module name="sharding-jdbc" />
+        <module name="sharding-jdbc-core" />
+        <module name="sharding-jdbc-core-spring-boot-starter" />
+        <module name="sharding-jdbc-core-spring-namespace" />
+        <module name="sharding-jdbc-orchestration" />
+        <module name="sharding-jdbc-orchestration-etcd-java-example" />
+        <module name="sharding-jdbc-orchestration-etcd-spring-boot-example" />
+        <module name="sharding-jdbc-orchestration-etcd-spring-namespace-example" />
+        <module name="sharding-jdbc-orchestration-etcd-yaml-example" />
+        <module name="sharding-jdbc-orchestration-spring-boot-starter" />
+        <module name="sharding-jdbc-orchestration-spring-namespace" />
+        <module name="sharding-jdbc-orchestration-zookeeper-java-example" />
+        <module name="sharding-jdbc-orchestration-zookeeper-spring-boot-example" />
+        <module name="sharding-jdbc-orchestration-zookeeper-spring-namespace-example" />
+        <module name="sharding-jdbc-orchestration-zookeeper-yaml-example" />
+        <module name="sharding-jdbc-raw-jdbc-java-example" />
+        <module name="sharding-jdbc-raw-jdbc-yaml-example" />
+        <module name="sharding-jdbc-spring-boot-data-jpa-example" />
+        <module name="sharding-jdbc-spring-boot-data-mybatis-example" />
+        <module name="sharding-jdbc-spring-boot-starter" />
+        <module name="sharding-jdbc-spring-namespace" />
+        <module name="sharding-jdbc-spring-namespace-jpa-example" />
+        <module name="sharding-jdbc-spring-namespace-mybatis-example" />
+        <module name="sharding-jdbc-transaction" />
+        <module name="sharding-jdbc-transaction-async-job" />
+        <module name="sharding-jdbc-transaction-example" />
+        <module name="sharding-jdbc-transaction-storage" />
+        <module name="sharding-opentracing" />
+        <module name="sharding-proxy" />
+        <module name="sharding-sql-test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="cbt-agent" target="1.7" />
+      <module name="cbt-agent-base" target="1.7" />
+      <module name="cbt-agent-bootstrap" target="1.7" />
+      <module name="cbt-agent-collect-servlet" target="1.7" />
+      <module name="cbt-agent-collects" target="1.7" />
+      <module name="cbt-client-model" target="1.7" />
+      <module name="cbt-service" target="1.7" />
+      <module name="cbt-service-web" target="1.7" />
+      <module name="druid" target="1.6" />
+      <module name="druid-spring-boot-starter" target="1.7" />
+      <module name="lierl-dubbo-common" target="1.8" />
+      <module name="lierl-dubbo-consumer" target="1.8" />
+      <module name="lierl-dubbo-provider" target="1.8" />
+      <module name="lierl_jta_tcc" target="1.8" />
+      <module name="lierl_kotlin_study" target="1.8" />
+      <module name="lierl_log" target="1.8" />
+      <module name="lierl_other_demo" target="1.8" />
+      <module name="lierl_outerside_tomcat" target="1.8" />
+      <module name="lierl_springboot_admin" target="1.8" />
+      <module name="lierl_springboot_mybatis" target="1.8" />
+      <module name="lierl_springcloud_eureka" target="1.8" />
+      <module name="lierl_springcloud_feign" target="1.8" />
+      <module name="lierl_springcloud_ribbon" target="1.8" />
+      <module name="lierl_springcloud_ribbon_without_eureka" target="1.8" />
+      <module name="lierl_springcloud_user" target="1.8" />
+      <module name="lierl_tl_study" target="1.8" />
+      <module name="lierl_webflux" target="1.8" />
+      <module name="raw-jdbc-example" target="1.7" />
+      <module name="sharding-core" target="1.7" />
+      <module name="sharding-jdbc" target="1.7" />
+      <module name="sharding-jdbc-core" target="1.7" />
+      <module name="sharding-jdbc-core-spring" target="1.8" />
+      <module name="sharding-jdbc-core-spring-boot-starter" target="1.7" />
+      <module name="sharding-jdbc-core-spring-namespace" target="1.7" />
+      <module name="sharding-jdbc-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration" target="1.7" />
+      <module name="sharding-jdbc-orchestration-etcd-java-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-etcd-spring-boot-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-etcd-spring-namespace-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-etcd-yaml-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-spring" target="1.8" />
+      <module name="sharding-jdbc-orchestration-spring-boot-starter" target="1.7" />
+      <module name="sharding-jdbc-orchestration-spring-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-spring-namespace" target="1.7" />
+      <module name="sharding-jdbc-orchestration-zookeeper-java-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-zookeeper-spring-boot-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-zookeeper-spring-namespace-example" target="1.7" />
+      <module name="sharding-jdbc-orchestration-zookeeper-yaml-example" target="1.7" />
+      <module name="sharding-jdbc-plugin" target="1.7" />
+      <module name="sharding-jdbc-raw-jdbc-example" target="1.7" />
+      <module name="sharding-jdbc-raw-jdbc-java-example" target="1.7" />
+      <module name="sharding-jdbc-raw-jdbc-yaml-example" target="1.7" />
+      <module name="sharding-jdbc-spring" target="1.8" />
+      <module name="sharding-jdbc-spring-boot-data-jpa-example" target="1.7" />
+      <module name="sharding-jdbc-spring-boot-data-mybatis-example" target="1.7" />
+      <module name="sharding-jdbc-spring-boot-example" target="1.7" />
+      <module name="sharding-jdbc-spring-boot-starter" target="1.7" />
+      <module name="sharding-jdbc-spring-namespace" target="1.7" />
+      <module name="sharding-jdbc-spring-namespace-example" target="1.7" />
+      <module name="sharding-jdbc-spring-namespace-jpa-example" target="1.7" />
+      <module name="sharding-jdbc-spring-namespace-mybatis-example" target="1.7" />
+      <module name="sharding-jdbc-transaction" target="1.7" />
+      <module name="sharding-jdbc-transaction-async-job" target="1.7" />
+      <module name="sharding-jdbc-transaction-example" target="1.7" />
+      <module name="sharding-jdbc-transaction-parent" target="1.8" />
+      <module name="sharding-jdbc-transaction-storage" target="1.7" />
+      <module name="sharding-opentracing" target="1.7" />
+      <module name="sharding-proxy" target="1.7" />
+      <module name="sharding-proxy-example" target="1.7" />
+      <module name="sharding-sphere" target="1.8" />
+      <module name="sharding-sphere-example" target="1.7" />
+      <module name="sharding-sql-test" target="1.7" />
+      <module name="spring-boot-data-jpa-example" target="1.7" />
+      <module name="spring-boot-data-mybatis-example" target="1.7" />
+      <module name="spring-boot-example" target="1.7" />
+      <module name="spring-namespace-example" target="1.7" />
+      <module name="spring-namespace-jpa-example" target="1.7" />
+      <module name="spring-namespace-mybatis-example" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

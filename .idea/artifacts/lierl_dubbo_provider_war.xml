@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lierl-dubbo-provider:war">
+    <output-path>$PROJECT_DIR$/lierl-dubbo-provider/target</output-path>
+    <root id="archive" name="lierl-dubbo-provider.war">
+      <element id="artifact" artifact-name="lierl-dubbo-provider:war exploded" />
+    </root>
+  </artifact>
+</component>

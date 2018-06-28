@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/lierl-dubbo" />
+    <file type="web" url="file://$PROJECT_DIR$/lierl-dubbo-consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/lierl-dubbo-provider" />
+    <file type="web" url="file://$PROJECT_DIR$/lierl_dubbo/lierl_dubbo_common" />
+    <file type="web" url="file://$PROJECT_DIR$/lierl_dubbo/lierl_dubbo_consumer" />
+    <file type="web" url="file://$PROJECT_DIR$/lierl_outerside_tomcat" />
+    <file type="web" url="file://$PROJECT_DIR$/tuling-trace-service/cbt-service-web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_outerside_tomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springcloud_ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springcloud_feign/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springcloud_ribbon_without_eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springboot_admin/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_other_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding-jdbc-example/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding-sphere/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding-sphere/sharding-jdbc-plugin/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding-sphere-example/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springboot_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/tuling-trace-agent/pom.xml" />
+        <option value="$PROJECT_DIR$/tuling-trace-service/pom.xml" />
+        <option value="$PROJECT_DIR$/druid/pom.xml" />
+        <option value="$PROJECT_DIR$/druid/druid-spring-boot-starter/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/sharding-jdbc-example/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding-sphere-example/pom.xml" />
+        <option value="$PROJECT_DIR$/sharding-sphere/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="JDK1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

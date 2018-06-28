@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/druid" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl-dubbo-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl-dubbo-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl-dubbo-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_jta_tcc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_other_demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_outerside_tomcat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springboot_admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springboot_mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springcloud_eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springcloud_feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springcloud_ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springcloud_ribbon_without_eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springcloud_user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_webflux" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-example/sharding-jdbc-orchestration-etcd-java-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-example/sharding-jdbc-orchestration-etcd-yaml-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-example/sharding-jdbc-orchestration-zookeeper-java-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-example/sharding-jdbc-orchestration-zookeeper-yaml-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-spring-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-spring-example/sharding-jdbc-orchestration-etcd-spring-boot-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-spring-example/sharding-jdbc-orchestration-etcd-spring-namespace-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-spring-example/sharding-jdbc-orchestration-zookeeper-spring-boot-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-orchestration-spring-example/sharding-jdbc-orchestration-zookeeper-spring-namespace-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-raw-jdbc-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-raw-jdbc-example/sharding-jdbc-raw-jdbc-java-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-raw-jdbc-example/sharding-jdbc-raw-jdbc-yaml-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-spring-boot-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-spring-boot-example/sharding-jdbc-spring-boot-data-jpa-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-spring-boot-example/sharding-jdbc-spring-boot-data-mybatis-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-spring-namespace-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-spring-namespace-example/sharding-jdbc-spring-namespace-jpa-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-spring-namespace-example/sharding-jdbc-spring-namespace-mybatis-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-spring-namespace-example/sharding-jdbc-spring-namespace-mybatis-example/src/main/java/io/shardingjdbc/example/spring/namespace/mybatis/repository/OrderItemRepository.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere-example/sharding-jdbc-transaction-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-core-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-core-spring/sharding-jdbc-core-spring-boot-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-core-spring/sharding-jdbc-core-spring-namespace" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-orchestration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-orchestration-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-orchestration-spring/sharding-jdbc-orchestration-spring-boot-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-orchestration-spring/sharding-jdbc-orchestration-spring-namespace" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-transaction-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-transaction-parent/sharding-jdbc-transaction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-transaction-parent/sharding-jdbc-transaction-async-job" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sharding-sphere/sharding-jdbc-transaction-parent/sharding-jdbc-transaction-storage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-agent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-agent/agent-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-agent/agent-bootstrap" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-agent/agent-collect-servlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-agent/agent-collects" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-service/cbt-client-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-service/cbt-service-web" charset="UTF-8" />
+  </component>
+</project>
