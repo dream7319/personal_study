@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd" default-lazy-init="false">
+
+
+    <bean id="thriftZookeeper" class="com.spring.zookeeper.thrift.zookeeper.ZookeeperFactory" destroy-method="close">
+        <property name="zkHosts" value="139.199.129.251:2181"/>
+        <property name="namespace" value="com.spring.zookeeper.thrift"/>
+        <property name="connectionTimeout" value="3000"/>
+        <property name="sessionTimeout" value="3000"/>
+        <property name="singleton" value="true"/>
+    </bean>
+
+    <bean id="echoService" class="com.spring.zookeeper.thrift.proxy.ThriftServiceClientProxyFactory"
+            destroy-method="close">
+        <property name="maxActive" value="5"/>
+        <property name="idleTime" value="1800000"/>
+        <property name="serverAddressProvider">
+            <bean class="com.spring.zookeeper.thrift.provider.ThriftServerAddressProviderZookeeper">
+                <property name="service" value="com.spring.zookeeper.thrift.service.EchoService"/>
+                <property name="version" value="1.0.0"/>
+                <property name="zkClient" ref="thriftZookeeper"/>
+            </bean>
+        </property>
+    </bean>
+
+</beans>

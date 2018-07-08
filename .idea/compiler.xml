@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
@@ -13,6 +14,7 @@
         <module name="cbt-agent-collects" />
         <module name="cbt-client-model" />
         <module name="cbt-service-web" />
+        <module name="cbt-test-web" />
         <module name="druid" />
         <module name="druid-spring-boot-starter" />
         <module name="lierl-dubbo-common" />
@@ -22,8 +24,14 @@
         <module name="lierl_log" />
         <module name="lierl_other_demo" />
         <module name="lierl_outerside_tomcat" />
+        <module name="lierl_spring_thrift" />
+        <module name="lierl_spring_zookeeper_thrift" />
         <module name="lierl_springboot_admin" />
         <module name="lierl_springboot_mybatis" />
+        <module name="lierl_springboot_swagger" />
+        <module name="lierl_springboot_thrift_client" />
+        <module name="lierl_springboot_thrift_interface" />
+        <module name="lierl_springboot_thrift_server" />
         <module name="lierl_springcloud_eureka" />
         <module name="lierl_springcloud_feign" />
         <module name="lierl_springcloud_ribbon" />
@@ -61,6 +69,7 @@
         <module name="sharding-opentracing" />
         <module name="sharding-proxy" />
         <module name="sharding-sql-test" />
+        <module name="test-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -72,18 +81,24 @@
       <module name="cbt-client-model" target="1.7" />
       <module name="cbt-service" target="1.7" />
       <module name="cbt-service-web" target="1.7" />
+      <module name="cbt-test-web" target="1.7" />
       <module name="druid" target="1.6" />
       <module name="druid-spring-boot-starter" target="1.7" />
       <module name="lierl-dubbo-common" target="1.8" />
       <module name="lierl-dubbo-consumer" target="1.8" />
       <module name="lierl-dubbo-provider" target="1.8" />
       <module name="lierl_jta_tcc" target="1.8" />
-      <module name="lierl_kotlin_study" target="1.8" />
       <module name="lierl_log" target="1.8" />
       <module name="lierl_other_demo" target="1.8" />
       <module name="lierl_outerside_tomcat" target="1.8" />
+      <module name="lierl_spring_thrift" target="1.8" />
+      <module name="lierl_spring_zookeeper_thrift" target="1.8" />
       <module name="lierl_springboot_admin" target="1.8" />
       <module name="lierl_springboot_mybatis" target="1.8" />
+      <module name="lierl_springboot_swagger" target="1.8" />
+      <module name="lierl_springboot_thrift_client" target="1.8" />
+      <module name="lierl_springboot_thrift_interface" target="1.8" />
+      <module name="lierl_springboot_thrift_server" target="1.8" />
       <module name="lierl_springcloud_eureka" target="1.8" />
       <module name="lierl_springcloud_feign" target="1.8" />
       <module name="lierl_springcloud_ribbon" target="1.8" />
@@ -91,14 +106,10 @@
       <module name="lierl_springcloud_user" target="1.8" />
       <module name="lierl_tl_study" target="1.8" />
       <module name="lierl_webflux" target="1.8" />
-      <module name="raw-jdbc-example" target="1.7" />
-      <module name="sharding-core" target="1.7" />
-      <module name="sharding-jdbc" target="1.7" />
       <module name="sharding-jdbc-core" target="1.7" />
       <module name="sharding-jdbc-core-spring" target="1.8" />
       <module name="sharding-jdbc-core-spring-boot-starter" target="1.7" />
       <module name="sharding-jdbc-core-spring-namespace" target="1.7" />
-      <module name="sharding-jdbc-example" target="1.7" />
       <module name="sharding-jdbc-orchestration" target="1.7" />
       <module name="sharding-jdbc-orchestration-etcd-java-example" target="1.7" />
       <module name="sharding-jdbc-orchestration-etcd-spring-boot-example" target="1.7" />
@@ -117,12 +128,9 @@
       <module name="sharding-jdbc-raw-jdbc-example" target="1.7" />
       <module name="sharding-jdbc-raw-jdbc-java-example" target="1.7" />
       <module name="sharding-jdbc-raw-jdbc-yaml-example" target="1.7" />
-      <module name="sharding-jdbc-spring" target="1.8" />
       <module name="sharding-jdbc-spring-boot-data-jpa-example" target="1.7" />
       <module name="sharding-jdbc-spring-boot-data-mybatis-example" target="1.7" />
       <module name="sharding-jdbc-spring-boot-example" target="1.7" />
-      <module name="sharding-jdbc-spring-boot-starter" target="1.7" />
-      <module name="sharding-jdbc-spring-namespace" target="1.7" />
       <module name="sharding-jdbc-spring-namespace-example" target="1.7" />
       <module name="sharding-jdbc-spring-namespace-jpa-example" target="1.7" />
       <module name="sharding-jdbc-spring-namespace-mybatis-example" target="1.7" />
@@ -131,18 +139,8 @@
       <module name="sharding-jdbc-transaction-example" target="1.7" />
       <module name="sharding-jdbc-transaction-parent" target="1.8" />
       <module name="sharding-jdbc-transaction-storage" target="1.7" />
-      <module name="sharding-opentracing" target="1.7" />
-      <module name="sharding-proxy" target="1.7" />
-      <module name="sharding-proxy-example" target="1.7" />
-      <module name="sharding-sphere" target="1.8" />
-      <module name="sharding-sphere-example" target="1.7" />
-      <module name="sharding-sql-test" target="1.7" />
-      <module name="spring-boot-data-jpa-example" target="1.7" />
-      <module name="spring-boot-data-mybatis-example" target="1.7" />
-      <module name="spring-boot-example" target="1.7" />
-      <module name="spring-namespace-example" target="1.7" />
-      <module name="spring-namespace-jpa-example" target="1.7" />
-      <module name="spring-namespace-mybatis-example" target="1.7" />
+      <module name="test-server" target="1.7" />
+      <module name="thrift-zookeeper-rpc" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,28 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://139.199.129.251:3306/python?useSSL=false
+      username: root
+      password: root
+      max-active: 20
+      initial-size: 1
+      max-wait: 60000
+      min-idle: 1
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: select 'x'
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+    type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.springboot.swagger.base
+  configuration:
+    map-underscore-to-camel-case: true
+

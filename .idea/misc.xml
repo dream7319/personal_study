@@ -7,6 +7,9 @@
     <file type="web" url="file://$PROJECT_DIR$/lierl_dubbo/lierl_dubbo_common" />
     <file type="web" url="file://$PROJECT_DIR$/lierl_dubbo/lierl_dubbo_consumer" />
     <file type="web" url="file://$PROJECT_DIR$/lierl_outerside_tomcat" />
+    <file type="web" url="file://$PROJECT_DIR$/lierl_spring_thrift" />
+    <file type="web" url="file://$PROJECT_DIR$/lierl_spring_zookeeper_thrift" />
+    <file type="web" url="file://$PROJECT_DIR$/tuling-trace-agent/test-web" />
     <file type="web" url="file://$PROJECT_DIR$/tuling-trace-service/cbt-service-web" />
   </component>
   <component name="MavenProjectsManager">
@@ -28,6 +31,12 @@
         <option value="$PROJECT_DIR$/tuling-trace-service/pom.xml" />
         <option value="$PROJECT_DIR$/druid/pom.xml" />
         <option value="$PROJECT_DIR$/druid/druid-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/tuling-trace-agent/test-web/pom.xml" />
+        <option value="$PROJECT_DIR$/tuling-trace-agent/test-server/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springboot_thrift_interface/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springboot_thrift_client/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springboot_thrift_server/pom.xml" />
+        <option value="$PROJECT_DIR$/lierl_springboot_swagger/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

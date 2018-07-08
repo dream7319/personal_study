@@ -17,6 +17,8 @@
         <module>lierl_log</module>
         <module>lierl_springcloud_user</module>
         <module>lierl_springcloud_eureka</module>
+        <module>lierl_spring_thrift</module>
+        <module>lierl_spring_zookeeper_thrift</module>
     </modules>
     <dependencyManagement>
         <dependencies>

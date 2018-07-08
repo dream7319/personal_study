@@ -28,6 +28,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!--JDBC连接数据库，因为要用HikariCP，所以需要将SpringBoot中的tomcat-jdbc排除-->
             <exclusions>
                 <exclusion>
                     <groupId>org.apache.tomcat</groupId>
@@ -35,6 +36,9 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!--thymeleaf 模板 默认包含spring-boot-starter-web-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -56,17 +60,17 @@
             <scope>test</scope>
         </dependency>
 
-        <!--<dependency>
+        <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>2.6.1</version>
-        </dependency>-->
+            <version>3.1.0</version>
+        </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.1.10</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

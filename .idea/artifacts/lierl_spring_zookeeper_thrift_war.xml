@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="lierl_spring_zookeeper_thrift:war">
+    <output-path>$PROJECT_DIR$/lierl_spring_zookeeper_thrift/target</output-path>
+    <root id="archive" name="lierl_spring_zookeeper_thrift-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="lierl_spring_zookeeper_thrift:war exploded" />
+    </root>
+  </artifact>
+</component>

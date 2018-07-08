@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd" default-lazy-init="false">
+    <bean id="thriftZookeeper" class="com.spring.zookeeper.thrift.zookeeper.ZookeeperFactory" destroy-method="close">
+        <property name="zkHosts" value="139.199.129.251:2181"/>
+        <property name="namespace" value="com.spring.zookeeper.thrift"/>
+        <property name="connectionTimeout" value="3000"/>
+        <property name="sessionTimeout" value="3000"/>
+        <property name="singleton" value="true"/>
+    </bean>
+
+    <bean id="serviceAddressRegister" class="com.spring.zookeeper.thrift.zookeeper.ThriftServerAddressRegisterZookeeper"
+        destroy-method="close">
+        <property name="zkClient" ref="thriftZookeeper"/>
+    </bean>
+
+    <bean id="echoServiceImpl" class="com.spring.zookeeper.thrift.service.impl.EchoServiceImpl"/>
+
+    <bean id="echoService1" class="com.spring.zookeeper.thrift.rpc.ThriftServiceServerFactory"
+            destroy-method="close">
+        <property name="service" ref="echoServiceImpl"/>
+        <property name="port" value="9000"/>
+        <property name="version" value="1.0.0"/>
+        <property name="weight" value="1"/>
+        <property name="thriftServerAddressRegister" ref="serviceAddressRegister"/>
+    </bean>
+
+    <bean id="echoService2" class="com.spring.zookeeper.thrift.rpc.ThriftServiceServerFactory"
+          destroy-method="close">
+        <property name="service" ref="echoServiceImpl"/>
+        <property name="port" value="9001"/>
+        <property name="version" value="1.0.0"/>
+        <property name="weight" value="1"/>
+        <property name="thriftServerAddressRegister" ref="serviceAddressRegister"/>
+    </bean>
+
+    <bean id="echoService3" class="com.spring.zookeeper.thrift.rpc.ThriftServiceServerFactory"
+          destroy-method="close">
+        <property name="service" ref="echoServiceImpl"/>
+        <property name="port" value="9002"/>
+        <property name="version" value="1.0.0"/>
+        <property name="weight" value="1"/>
+        <property name="thriftServerAddressRegister" ref="serviceAddressRegister"/>
+    </bean>
+</beans>

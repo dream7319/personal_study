@@ -9,8 +9,14 @@
     <file url="file://$PROJECT_DIR$/lierl_log" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lierl_other_demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lierl_outerside_tomcat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_spring_thrift" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_spring_zookeeper_thrift" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lierl_springboot_admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lierl_springboot_mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springboot_swagger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springboot_thrift_client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springboot_thrift_interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lierl_springboot_thrift_server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lierl_springcloud_eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lierl_springcloud_feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lierl_springcloud_ribbon" charset="UTF-8" />
@@ -57,6 +63,8 @@
     <file url="file://$PROJECT_DIR$/tuling-trace-agent/agent-bootstrap" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tuling-trace-agent/agent-collect-servlet" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tuling-trace-agent/agent-collects" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-agent/test-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tuling-trace-agent/test-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tuling-trace-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tuling-trace-service/cbt-client-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tuling-trace-service/cbt-service-web" charset="UTF-8" />

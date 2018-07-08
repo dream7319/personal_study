@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cbt-test-web:war">
+    <output-path>$PROJECT_DIR$/tuling-trace-agent/test-web/target</output-path>
+    <root id="archive" name="cbt-test-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cbt-test-web:war exploded" />
+    </root>
+  </artifact>
+</component>
